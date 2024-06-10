@@ -1,5 +1,6 @@
 {
   "transform": {
+    "^.+\\.js$": "babel-jest",
     "^.+\\.(t|j)sx?$": "ts-jest"
   },
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
@@ -10,5 +11,8 @@
     "jsx",
     "json",
     "node"
+  ],
+  "transformIgnorePatterns": [
+    "<rootDir>/node_modules/(?!(lodash-es|other-es-lib))"
   ]
 }
