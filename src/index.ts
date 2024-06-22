@@ -3,8 +3,7 @@
 import { map } from 'lodash-es';
 
 /** 单词转化类型 */
-export enum IWordChangeType {
-  /** 首字母大写 */
+export enum IWordChangeType {/** 首字母大写 */
   Aaa = 1,
   /** 全部转大写 */
   AAA,
